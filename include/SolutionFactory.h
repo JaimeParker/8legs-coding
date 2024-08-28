@@ -7,6 +7,7 @@
 
 #include "BaseSolution.h"
 #include "../array/BinarySearch.cpp"
+#include "../array/RemoveElement.cpp"
 
 #include <memory>
 #include <unordered_map>
@@ -17,6 +18,7 @@ public:
     SolutionFactory() {
         // register solutions
         solutionMap[704] = []() { return std::make_unique<BinarySearch>(); };
+        solutionMap[27] = []() { return std::make_unique<RemoveElement>(); };
     }
 
     std::unique_ptr<BaseSolution> getSolution(const int id) {
