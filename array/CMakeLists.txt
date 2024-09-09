@@ -8,4 +8,6 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 add_library(array_solutions
         BinarySearch.cpp
         RemoveElement.cpp
+        SquaresOfASortedArray.cc
+        MinimumSizeSubarraySum.cc
 )

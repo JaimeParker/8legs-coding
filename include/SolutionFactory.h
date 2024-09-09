@@ -8,6 +8,8 @@
 #include "BaseSolution.h"
 #include "../array/BinarySearch.cpp"
 #include "../array/RemoveElement.cpp"
+#include "../array/SquaresOfASortedArray.cc"
+#include "../array/MinimumSizeSubarraySum.cc"
 
 #include <memory>
 #include <unordered_map>
@@ -19,6 +21,8 @@ public:
         // register solutions
         solutionMap[704] = []() { return std::make_unique<BinarySearch>(); };
         solutionMap[27] = []() { return std::make_unique<RemoveElement>(); };
+        solutionMap[977] = []() { return std::make_unique<SquaresOfASortedArray>(); };
+        solutionMap[209] = []() { return std::make_unique<MinimumSizeSubarraySum>(); };
     }
 
     std::unique_ptr<BaseSolution> getSolution(const int id) {
