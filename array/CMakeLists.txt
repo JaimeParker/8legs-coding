@@ -10,4 +10,5 @@ add_library(array_solutions
         RemoveElement.cpp
         SquaresOfASortedArray.cc
         MinimumSizeSubarraySum.cc
+        SpiralMatrix2.cc
 )

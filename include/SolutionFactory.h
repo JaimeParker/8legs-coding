@@ -10,6 +10,7 @@
 #include "../array/RemoveElement.cpp"
 #include "../array/SquaresOfASortedArray.cc"
 #include "../array/MinimumSizeSubarraySum.cc"
+#include "../array/SpiralMatrix2.cc"
 
 #include <memory>
 #include <unordered_map>
@@ -23,6 +24,7 @@ public:
         solutionMap[27] = []() { return std::make_unique<RemoveElement>(); };
         solutionMap[977] = []() { return std::make_unique<SquaresOfASortedArray>(); };
         solutionMap[209] = []() { return std::make_unique<MinimumSizeSubarraySum>(); };
+        solutionMap[59] = []() { return std::make_unique<SpiralMatrix2>(); };
     }
 
     std::unique_ptr<BaseSolution> getSolution(const int id) {
