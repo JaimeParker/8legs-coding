@@ -12,3 +12,5 @@ add_library(array_solutions
         MinimumSizeSubarraySum.cc
         SpiralMatrix2.cc
 )
+
+add_executable(KC58 KC58.cc)

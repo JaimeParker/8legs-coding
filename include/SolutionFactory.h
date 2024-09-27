@@ -11,6 +11,8 @@
 #include "../array/SquaresOfASortedArray.cc"
 #include "../array/MinimumSizeSubarraySum.cc"
 #include "../array/SpiralMatrix2.cc"
+#include "../listnode/RemoveLinkedListElements.cc"
+#include "../listnode/DesignLinkedList.cc"
 
 #include <memory>
 #include <unordered_map>
@@ -25,6 +27,8 @@ public:
         solutionMap[977] = []() { return std::make_unique<SquaresOfASortedArray>(); };
         solutionMap[209] = []() { return std::make_unique<MinimumSizeSubarraySum>(); };
         solutionMap[59] = []() { return std::make_unique<SpiralMatrix2>(); };
+        solutionMap[203] = []() { return std::make_unique<RemoveLinkedListElements>(); };
+        solutionMap[707] = []() { return std::make_unique<DesignLinkedList>(); };
     }
 
     std::unique_ptr<BaseSolution> getSolution(const int id) {
